@@ -103,24 +103,17 @@ public partial class FiscalCodeBuilder
     {
         char[] vowels = { 'A', 'E', 'I', 'O', 'U' };
         char[] consonants = { 'B', 'C', 'D', 'F', 'G', 'H','J','K','L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V','W','X','Y','Z' };
-        char[] chars = s.ToUpper().ToCharArray();
+       // char[] chars = s.ToUpper().ToCharArray();
 
         string charVolwes = "";
         string charConsonants = "";
-        int i = 0,j = 0;
 
-        foreach (char ch in chars)
+        foreach (var ch in s)
         {
             if (vowels.Contains(ch))
-            {
-                charVolwes = charVolwes.Insert(i, ch.ToString());
-                i++;
-            }
+                charVolwes += ch;
             else if(consonants.Contains(ch))
-            {
-                charConsonants = charConsonants.Insert(j, ch.ToString());
-                j++;
-            }
+                charConsonants += ch;
         }
 
         if(volwes)
