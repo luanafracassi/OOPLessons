@@ -103,7 +103,6 @@ public partial class FiscalCodeBuilder
     {
         char[] vowels = { 'A', 'E', 'I', 'O', 'U' };
         char[] consonants = { 'B', 'C', 'D', 'F', 'G', 'H','J','K','L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V','W','X','Y','Z' };
-       // char[] chars = s.ToUpper().ToCharArray();
 
         string charVolwes = "";
         string charConsonants = "";
